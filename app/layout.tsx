@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn("min-h-screen bg-background font-sans antialiased",manrope.variable)}
+        className={cn("min-h-screen bg-background font-manrope antialiased",manrope.variable)}
       >
         {children}
       </body>
