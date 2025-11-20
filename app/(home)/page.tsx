@@ -42,7 +42,7 @@ const products: Product[] = [
     price: 550,
   },
    {
-    id: '',
+    id: '5',
     name: 'Veggie Pizza',
     description: 'Loaded with fresh vegetables and cheese',
     image: '/mushroom.png',
