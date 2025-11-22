@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import {Manrope, Inter} from "next/font/google";
+import { Manrope, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Header from "@/components/ui/custom/header";
+import type { ReactNode } from "react";
+// Simple server-side CartProvider fallback to avoid missing module during development
+function CartProvider({ children }: { children: ReactNode }) {
+  return <>{children}</>;
+}
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -27,12 +32,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn("min-h-screen w-full bg-background font-manrope antialiased",manrope.variable)}
+        className={cn(
+          "min-h-screen w-full bg-background font-manrope antialiased",
+          manrope.variable
+        )}
       >
-        <Header/>
-        <h1></h1>
-        <main>{children}</main>
+        <CartProvider>   {/* 👈 WRAP EVERYTHING HERE */}
+          <Header />
+          <main>{children}</main>
+        </CartProvider>
       </body>
     </html>
   );
 }
+
