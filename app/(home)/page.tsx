@@ -48,9 +48,9 @@ const products: Product[] = [
 
 
 const beverages = [
-  { id: "b1", name: "Coca Cola", description: "330ml", image: "/coke.png", price: 80 },
+  { id: "b1", name: "Coca Cola", description: "330ml", image: "/coca-cola.png", price: 80 },
   { id: "b2", name: "Pepsi", description: "330ml", image: "/pepsi.png", price: 80 },
-  { id: "b3", name: "Orange Juice", description: "250ml", image: "/orange.png", price: 120 },
+  { id: "b3", name: "Sprite", description: "250ml", image: "/sprite.png", price: 120 },
 ];
 
 export default function Home() {
