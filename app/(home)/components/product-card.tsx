@@ -101,14 +101,16 @@ const ProductCard = ({ product }: PropTypes) => {
                   <RadioGroup defaultValue="thin" className="grid grid-cols-3 gap-4 mt-2">
                     <div>
                       <RadioGroupItem value="thin" id="thin" className="peer sr-only" aria-label="Thin" />
-                      <Label htmlFor="thin" className="flex flex-col items-center justify-between rounded-md border-2 bg-white p-4 hover:bg-accent peer-data-[state=checked]:border-primary">
+                      <Label htmlFor="thin" className="flex flex-col items-center justify-between rounded-md 
+                      border-2 bg-white p-4 hover:bg-accent peer-data-[state=checked]:border-primary">
                         Thin
                       </Label>
                     </div>
 
                     <div>
                       <RadioGroupItem value="thick" id="thick" className="peer sr-only" aria-label="Thick" />
-                      <Label htmlFor="thick" className="flex flex-col items-center justify-between rounded-md border-2 bg-white p-4 hover:bg-accent peer-data-[state=checked]:border-primary">
+                      <Label htmlFor="thick" className="flex flex-col items-center justify-between rounded-md border-2
+                       bg-white p-4 hover:bg-accent peer-data-[state=checked]:border-primary">
                         Thick
                       </Label>
                     </div>
